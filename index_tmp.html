@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="download.jpg" type="image/icon type">
+        <style>
+            .mystyle{
+                width:70px;
+                background-color: gray;
+                border-radius: 2px;
+                font-weight: bolder;
+            }
+        </style>
+       <meta charset="utf-8" />
+       <title>learning html5</title>
+       <script>var timeServer = new Date();</script>
+       <script type="text/javascript" language="javascript">
+        //Users time
+        var timeLocal = new Date();
+
+        //Calculate the difference (returns milliseconds)
+        millDiff = timeLocal - timeServer;
+
+        //initalize the clock on loading of page
+        window.onload = function () {
+            //set the interval so clock ticks
+            setInterval("TimeTick()", 10);
+        }
+
+        //The ticking clock function
+        function TimeTick() {
+            //grab updated time
+
+            //debugger;
+            timeLocal = new Date();
+            //add time difference
+            timeLocal.setMilliseconds(timeLocal.getMilliseconds() - millDiff);
+            //display the value
+            var Seconds = timeLocal.getSeconds()
+            var hours = timeLocal.getHours()
+            var minutes = timeLocal.getMinutes()
+
+            if (minutes < 10) {
+                minutes = "0" + minutes;
+            }
+            if (hours < 10) {
+                hours = "0" + hours;
+            }
+            if (Seconds < 10) {
+                Seconds = "0" + Seconds;
+            }
+
+            document.getElementById("time").innerHTML = hours + ":" + minutes + ":" + Seconds;
+        }
+
+        var bgImg = 0;
+    </script>
+    </head>
+
+    <body>
+        <main>
+            <p>Hello, I am learning HTML5</p>
+        </main>
+        <div id="time" class="mystyle">
+
+        </div>
+        <div>
+            <img src="download.jpg" alt="junk pic" />
+        </div>
+        <div>
+            <img src="download.jpg" width="500px" alt="junk pic" />
+        </div>
+        <div>
+            <img src="download.jpg" width="500px" height="200px" alt="junk pic" />
+        </div>
+        <div>
+            <img src="download.jpg" width="50%"" alt="junk pic" />
+        </div>
+        <footer>
+           <address>
+               #105, Silver Oak Enclave Aprtment
+               Tatanagar Near Kodigehalli Circle
+               Bangalore
+           </address>
+           <div>Email:<email>neeraj2kiet@gmail.com</email></div>
+        </footer>
+
+    </body>
+</html>

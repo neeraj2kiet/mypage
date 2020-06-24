@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://kit.fontawesome.com/affde4a2b9.js" crossorigin="anonymous"></script>
+      <style>
+         #more{
+             width:300px;
+             min-height:300px;
+             border:3px solid blue;   
+         }
+      </style>
+  </head>
+  
+  <body>
+    <!--uncomment the <section> tag to see what happens if full-height elements are nested deeper than 1 into the <body> -->
+    <section>
+        <div>
+            <a href="#myid">myId testing</a>
+        </div>
+      <div>
+        <i class="fas fa-angry fa-sm"></i>
+        <i class="fas fa-angry fa-md"></i>
+        <i class="fas fa-angry fa-10x"></i>
+        <br>
+        <i class="fas fa-address-card fa-10x"></i>
+        <br/>
+        <a href="http://www.twitter.com" aria-label="Twitter" target="_blank"><i class="fab fa-twitter fa-10x"></i></a>
+        <h1>100% Height Elements </h1>
+        <p>Just a simple (and ugly) little area to play with 100% heights.</p>
+        <a href="#more">More</a>
+      </div>
+      
+      
+      <br>
+      <div id="more">
+        <h2>height:100% wierd</h2>
+        <p>The default is height:auto, so html and body must have height:100% set.</p>
+        <p>Elements nested deeper than one level into the body with height: 100% can overflow. Uncomment the "section" tag to see this.</p>
+        <p>This article has min-height: 100% set to allow content to flow to greater than 100% of the viewport height.</p>
+        <p>Setting height or min-height to 100vh is a simple way of creating full height elements without setting explicit heights on parents and worrying about nesting. (Uncomment min-height: 100vh in "div, article" css, comment out all other heights and  <a href="http://caniuse.com/#search=vh">see caniuse for browser support</a>).</p> 
+      </div>
+    </section>
+    <br>
+   <div>
+       <video src="index.mp4" controls><code>Video</code></video>
+
+     
+   </div>
+   <div>
+    <ol>		
+        <li>Vegetables</li>	
+        <li>Fruit
+        <ul>				
+           <li>Blueberries</li>
+           <li>Bananas</li>
+        </ul>
+        <li>
+    </ol>
+    <a href="mailto:shay@awesome.com?subject=Reaching%20Out&body=How%20are%20you">Email Me</a>
+       <table border="1">
+           <tr>
+               <th>Parent's</th><th>Childs</th>
+           </tr>
+           <tr>
+             <td rowspan="2">Neeraj</td><td>Anushka</td>
+             <tr><td>Anshuman</td></tr>
+           </tr>
+           <tr>
+               <td rowspan="2">Pankaj</td><td>Hemant</td>
+               <tr><td>Sudiksha</td></tr>
+           </tr>
+           <tr>
+               <td>Gaurav</td><td>Krishna</td>
+           </tr>
+           <tr>
+               <td colspan="2">Total: 5</td>
+           </tr>
+       </table>
+   </div>
+   <div>
+       <label for="maths">Maths</label>
+       <meter id="maths" min="0" max="10" value="9"></meter>
+       <label for="english">English</label>
+       <meter id="english" min="0" max="100" value="80"></meter>
+   </div>
+   <div>
+       <label for="progrss">Progress Report</label>
+       <progress value="37" max="100"></progress>
+   </div>
+   <iframe src="http://localhost:3000/" style="border:2px solid red;"></iframe>
+   <p><bdo dir="ltr">Neeraj Shukla</bdo></p>
+    <div id="myid">
+        This is the testing for my Id internal tag for anchor element.
+        (x + y)<sup>3</sup>
+        log<sub>10</sub>15
+        <abr>Sunday
+            H<sub>2</sub>O
+        </abr>
+        <details>
+            <summary>
+                Neeraj Shukla
+            </summary>
+            <summary>
+                Pankaj Shukla
+            </summary>
+        </details>
+    </div>
+    <footer>
+      <p>This is the footer</p>
+    </footer>
+  </body>
